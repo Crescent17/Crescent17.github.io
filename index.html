@@ -13,5 +13,39 @@
     <title>Test</title>
 </head>
 <body>
+<main class="main">
+    <form action="submit" class="main__form">
+        <div class="form__slide slide--first">
+            <div class="flex-container margin-sm">
+                <label for="age" class="section-title">Возраст</label>
+                <p class="step"><span class="step--current">1</span>/3</p>
+            </div>
+            <div>
+                <p class="info--age"><span class="number">27</span> лет</p>
+                <input type="range" id="age" min="18" max="35" step="1" value="27" class="slider">
+            </div>
+            <div class="allowed-ages margin-lg">
+                <p>18 лет</p>
+                <p>35 лет</p>
+            </div>
+            <label class="section-title margin-sm">Пол</label>
+            <div class="radio-buttons-gender">
+                <div class="form_radio">
+                    <div class="radio-button">
+                        <input type="radio" class="custom-radio" id="male" name="sex" value="male" checked>
+                        <label for="male">мужчина</label>
+                    </div>
+                    <div class="radio-button">
+                        <input type="radio" class="custom-radio" id="female" name="sex" value="female">
+                        <label for="female">женщина</label>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-container">
+                <a class="btn btn--continue">Далее</a>
+            </div>
+        </div>
+</main>
+<script src="script.js"></script>
 </body>
 </html>
