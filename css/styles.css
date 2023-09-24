@@ -336,3 +336,86 @@ textarea::placeholder {
 textarea:focus {
     outline: none;
 }
+
+.input--name {
+    position: relative;
+    width: 100%;
+    font-size: 1.8rem;
+    padding: 1.9rem 2.5rem;
+    box-shadow: 0 4px 6px rgba(131.75, 131.75, 131.75, 0.10);
+    border-radius: 10px;
+    border: 1px #E3E3E3 solid;
+    font-family: inherit;
+}
+
+.input--name:focus {
+    outline: none;
+}
+
+.input--phone {
+    position: relative;
+    width: 100%;
+    font-size: 1.8rem;
+    padding: 1.9rem 2.5rem;
+    box-shadow: 0 4px 6px rgba(131.75, 131.75, 131.75, 0.10);
+    border-radius: 10px;
+    border: 1px #E3E3E3 solid;
+    font-family: inherit;
+}
+
+.input--phone:focus {
+    outline: none;
+}
+
+.input--phone::placeholder {
+    color: #ADADAD;
+}
+
+.message--error {
+    position: absolute;
+    color: var(--error-color);
+    font-size: 1.8rem;
+    font-style: italic;
+    font-weight: 400;
+    z-index: 1;
+    transform: translateY(-2.4rem);
+}
+
+.invalid {
+    border: 1px var(--error-color) solid;
+}
+
+.policy-container {
+    display: flex;
+    gap: .5rem;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    background-color: #fff;
+    color: currentColor;
+    width: 1.8rem;
+    height: 1.8rem;
+    border: 1px #403EFC solid;
+    border-radius: .3rem;
+    display: grid;
+}
+
+input[type="checkbox"]::before {
+    content: "";
+    width: 1.6rem;
+    height: 1.6rem;
+    background: url("../img/ic_round-check.png");
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+}
+
+input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+
+.check--policy {
+    color: var(--primary-text-color);
+    font-size: 16px;
+    font-weight: 400;
+}
