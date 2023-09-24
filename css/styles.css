@@ -57,3 +57,76 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 2.4rem;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+.btn--continue {
+    color: #fff;
+    padding: 2rem 10rem;
+    border: none;
+    background-image: var(--primary-gradient);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.btn--continue:hover {
+    background-image: var(--primary-gradient-hover);
+}
+
+.btn--prev {
+    position: relative;
+    padding: 2rem 10rem;
+    color: var(--primary-text-color);
+    border-radius: 10rem;
+}
+
+.btn--prev::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50px;
+    padding: 2px;
+    background: var(--prev-button-gradient);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+.btn--prev:hover::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50px;
+    padding: 2px;
+    background: var(--prev-button-gradient-hover);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+.btn--submit {
+    display: flex;
+    color: white;
+    padding: 2rem 4rem;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    background: var(--primary-gradient);
+    position: relative;
+}
+
+.btn--submit:not(.inactive):hover {
+    background-image: var(--primary-gradient-hover);
+}
