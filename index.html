@@ -66,6 +66,40 @@
                 <a class="btn btn--continue">Далее</a>
             </div>
         </div>
+        <div class="form__slide slide--third hidden">
+            <div class="flex-container margin-sm">
+                <label for="name" class="section-title">Имя</label>
+                <p class="step"><span class="step--current">3</span>/3</p>
+            </div>
+            <div class="input-parent">
+                <label for="name" class="message--error hidden">Введите имя</label>
+                <input type="text" id="name" class="input--name margin-lg">
+            </div>
+            <div class="input-parent">
+                <label for="tel" class="section-title margin-sm">Телефон</label>
+                <label for="tel" class="message--error hidden">Введите номер телефона</label>
+                <input type="tel" id="tel" class="input--phone margin-md">
+            </div>
+            <div class="policy-container">
+                <input type="checkbox" id="policy" class="margin-md">
+                <label class="check--policy" for="policy">Я согласен с политикой конфиденциальности</label>
+            </div>
+            <div class="btn-container">
+                <a class="btn btn--prev">Назад</a>
+                <a class="btn btn--submit inactive">
+                    <img src="img/loader.svg" alt="Loader" class="loader hidden">
+                    <p>Отправить заявку</p>
+                </a>
+            </div>
+        </div>
+    </form>
+    <div class="success-popup hidden">
+        <img src="img/icon-park-solid_check-one.svg" alt="Success" class="success__img margin-md">
+        <p class='success__message margin-md'>Ваша заявка успешно отправлена!</p>
+        <div class="btn-container">
+            <a class="btn btn--continue success__btn--close">Закрыть</a>
+        </div>
+    </div>
 </main>
 <script src="script.js"></script>
 </body>
