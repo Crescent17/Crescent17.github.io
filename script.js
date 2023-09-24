@@ -80,3 +80,16 @@ citySelect.addEventListener('keyup', e => {
     }
 })
 messageArea.addEventListener('input', e => message = e.target.value)
+nameInput.addEventListener('input', e => {
+    name = e.target.value
+    if (!name) {
+        nameInput.classList.add('invalid')
+        errorLabels[0].classList.remove('hidden')
+    }
+    if (name) {
+        nameInput.classList.remove('invalid')
+        errorLabels[0].classList.add('hidden')
+    }
+    if (phone && name && isFinite(phone)) submitButton.classList.remove('btn--inactive')
+    if (!phone || !name || !isFinite(phone)) submitButton.classList.add('btn--inactive')
+})
