@@ -290,3 +290,49 @@ input[type="radio"]:checked::before {
 .sex-type {
     margin-left: 3.6rem;
 }
+
+.select--city {
+    position: relative;
+    width: 100%;
+    font-family: inherit;
+    padding: 1.9rem 2.5rem;
+    color: var(--primary-text-color);
+    font-size: 24px;
+    font-weight: 400;
+    border: 1px #E3E3E3 solid;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(131.75, 131.75, 131.75, 0.10);
+    background-size: cover;
+    appearance: none;
+    background: white url('../img/arrow.svg') no-repeat right center;
+}
+
+.select--city:focus {
+    outline: none;
+}
+
+.opened {
+    background: white url('../img/arrowUp.svg') no-repeat right center;
+}
+
+textarea {
+    padding: 1.5rem 2.5rem;
+    display: block;
+    width: 100%;
+    margin-top: 3rem;
+    border: 1px #E3E3E3 solid;
+    border-radius: 1rem;
+    font-size: 1.8rem;
+    font-family: inherit;
+    font-style: italic;
+    font-weight: 400;
+    resize: none;
+}
+
+textarea::placeholder {
+    color: #ADADAD;
+}
+
+textarea:focus {
+    outline: none;
+}
