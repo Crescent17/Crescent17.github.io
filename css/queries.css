@@ -1,0 +1,67 @@
+@media (max-width: 75rem) {
+    .main__form {
+        min-width: 80rem;
+        padding: 10rem 5rem;
+        border-radius: 4rem;
+    }
+
+    .section-title {
+        font-size: 2.4rem;
+    }
+
+    .form__slide {
+        font-size: 2rem;
+    }
+
+    .info--age {
+        font-size: 2rem;
+    }
+
+    .allowed-ages {
+        font-size: 2rem;
+    }
+
+    .radio-buttons-gender {
+        font-size: 2rem;
+    }
+
+    .btn {
+        padding: 1.6rem 7.8rem;
+        font-size: 2rem;
+    }
+
+    .btn--submit {
+        padding: 1.6rem 4.5rem;
+    }
+
+    .select--city {
+        font-size: 2rem;
+    }
+
+    textarea {
+        padding: 1.5rem 2rem;
+    }
+
+    textarea::placeholder {
+        font-size: 1.6rem;
+    }
+
+    .input--phone {
+        font-size: 1.6rem;
+    }
+
+    .success-popup {
+        min-width: 80rem;
+        border-radius: 4rem;
+    }
+
+    .success__message {
+        font-size: 2.4rem;
+    }
+
+    .loader {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
+
