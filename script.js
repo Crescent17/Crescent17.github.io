@@ -113,3 +113,20 @@ policyCheck.addEventListener('change', e => {
     if (phone && name && policy) submitButton.classList.remove('btn--inactive')
     if (!name || !phone || !policy || !isFinite(phone)) submitButton.classList.add('btn--inactive')
 })
+
+submitButton.addEventListener('click', e => {
+    if (submitButton.classList.contains('btn--inactive')) return
+    submitButton.classList.add('padding-sm')
+    loader.classList.remove('hidden')
+    submitButton.classList.add('btn--inactive')
+    setTimeout(() => {
+        body.classList.add('darken')
+        allSlides.forEach(slide => slide.classList.add('hidden'))
+        successScreen.classList.remove('hidden')
+        form.classList.add('hidden')
+        buttonClose.addEventListener('click', () => {
+            successScreen.classList.add('hidden')
+            body.classList.remove('darken')
+        })
+    }, 5000)
+})
