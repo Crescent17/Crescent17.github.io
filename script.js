@@ -58,3 +58,24 @@ backButtons.forEach(backButton => backButton.addEventListener('click', () => {
 slider.addEventListener('input', e => {
     ageNumber.innerText = e.target.value
 })
+
+citySelect.addEventListener('click', (e) => {
+    isSelectOpened = !isSelectOpened
+    citySelect.classList.toggle('opened')
+})
+
+citySelect.addEventListener('blur', () => {
+    if (isSelectOpened) {
+        isSelectOpened = !isSelectOpened
+        citySelect.classList.remove('opened')
+    }
+})
+
+citySelect.addEventListener('keyup', e => {
+    if (e.key === 'Escape') {
+        if (isSelectOpened) {
+            isSelectOpened = !isSelectOpened;
+            citySelect.classList.remove('opened')
+        }
+    }
+})
