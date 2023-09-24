@@ -419,3 +419,7 @@ input[type="checkbox"]:checked::before {
     font-size: 16px;
     font-weight: 400;
 }
+
+.input-parent {
+    position: relative;
+}
