@@ -127,8 +127,12 @@ body {
     position: relative;
 }
 
-.btn--submit:not(.inactive):hover {
+.btn--submit:not(.btn--inactive):hover {
     background-image: var(--primary-gradient-hover);
+}
+
+.btn--inactive {
+    background: var(--inactive-button-gradient);
 }
 
 .main__form {
