@@ -45,3 +45,13 @@ function handleBack() {
     allSlides.forEach(slide => slide.classList.add('hidden'))
     document.querySelector(`.slide--${numberIntoSlide[slide]}`).classList.remove('hidden')
 }
+
+nextButtons.forEach((nextButton, index) => {
+    nextButton.addEventListener('click', () => {
+        handleNext(index)
+    })
+})
+
+backButtons.forEach(backButton => backButton.addEventListener('click', () => {
+    handleBack()
+}))
