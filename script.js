@@ -32,3 +32,16 @@ const numberIntoSlide = {
     2: 'third',
     3: 'success'
 }
+
+const handleNext = (index) => {
+    if (index === 1 && !message) return
+    slide += 1
+    allSlides.forEach(slide => slide.classList.add('hidden'))
+    document.querySelector(`.slide--${numberIntoSlide[slide]}`).classList.remove('hidden')
+}
+
+function handleBack() {
+    slide -= 1
+    allSlides.forEach(slide => slide.classList.add('hidden'))
+    document.querySelector(`.slide--${numberIntoSlide[slide]}`).classList.remove('hidden')
+}
