@@ -442,3 +442,23 @@ input[type="checkbox"]:checked::before {
 .darken {
     backdrop-filter: brightness(50%);
 }
+
+@keyframes loadSpinner {
+    0% {
+        rotate: 0;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}
+
+.loader {
+    width: 3rem;
+    height: 3rem;
+    margin-left: -1rem;
+    animation: loadSpinner 2s ease infinite;
+    position: relative;
+    left: 0;
+    translate: -20% 0;
+}
