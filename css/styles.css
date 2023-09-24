@@ -438,3 +438,7 @@ input[type="checkbox"]:checked::before {
     font-size: 3.2rem;
     font-weight: 500;
 }
+
+.darken {
+    backdrop-filter: brightness(50%);
+}
