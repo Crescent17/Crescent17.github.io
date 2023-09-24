@@ -24,3 +24,11 @@ let name;
 let isSelectOpened = false;
 let phone;
 let policy;
+
+let slide = 0;
+const numberIntoSlide = {
+    0: 'first',
+    1: 'second',
+    2: 'third',
+    3: 'success'
+}
