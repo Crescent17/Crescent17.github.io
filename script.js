@@ -130,3 +130,17 @@ submitButton.addEventListener('click', e => {
         })
     }, 5000)
 })
+
+async function getNumberFormat() {
+    try {
+        const data = await fetch('https://ipinfo.io/json?token=c82b9aa9247689')
+        const res = await data.json();
+        return res.abuse.phone.split(' ')[0]
+    } catch (err) {
+        console.error(err)
+    }
+}
+
+(async function () {
+    numberInput.setAttribute('placeholder', `${await getNumberFormat() === '+375' ? '+375 (_ _) _ _ _-_ _-_ _' : '+7 (_ _ _) _ _ _ - _ _ - _ _'}`)
+})()
