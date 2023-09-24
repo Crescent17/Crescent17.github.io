@@ -45,6 +45,27 @@
                 <a class="btn btn--continue">Далее</a>
             </div>
         </div>
+        <div class="form__slide slide--second hidden">
+            <div class="flex-container margin-sm">
+                <label class="section-title">Город</label>
+                <p class="step"><span class="step--current">2</span>/3</p>
+            </div>
+            <select name="city" id="city" class="select--city margin-lg arrow-down">
+                <option selected value="Minsk">Минск</option>
+                <option value="Grodno">Гродно</option>
+                <option value="Vitebsk">Витебск</option>
+                <option value="Mogilev">Могилев</option>
+                <option value="Gomel">Гомель</option>
+                <option value="Brest">Брест</option>
+            </select>
+            <label for="message" class="section-title">Сообщение</label>
+            <textarea name="message" id="message" cols="30" rows="5" maxlength="370"
+                      placeholder="Количество символов не более 370" class="margin-md"></textarea>
+            <div class="btn-container">
+                <a class="btn btn--prev">Назад</a>
+                <a class="btn btn--continue">Далее</a>
+            </div>
+        </div>
 </main>
 <script src="script.js"></script>
 </body>
