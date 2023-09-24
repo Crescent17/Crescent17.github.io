@@ -130,3 +130,159 @@ body {
 .btn--submit:not(.inactive):hover {
     background-image: var(--primary-gradient-hover);
 }
+
+.main__form {
+    padding: 8rem 16rem;
+    min-width: 116rem;
+    background: #fff;
+    border-radius: 6rem;
+}
+
+.section-title {
+    display: block;
+    font-size: 3.2rem;
+    font-weight: 500;
+}
+
+.form__slide {
+    font-size: 2.4rem;
+    font-weight: 500;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.step--current {
+    color: var(--current-step-color);
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info--age {
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2.9rem;
+}
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: .7rem;
+    background: var(--primary-gradient);
+    border-radius: .3rem;
+    outline: none;
+    opacity: .7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin-bottom: 1.5rem;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 4.5rem;
+    height: 4.5rem;
+    background: url("../img/Ellipse 1.png");
+    border: none;
+    cursor: pointer;
+    background-size: contain;
+}
+
+.slider::-moz-range-thumb {
+    border: none;
+    width: 4.5rem;
+    height: 4.5rem;
+    background: url("../img/Ellipse 1.png");
+    cursor: pointer;
+    background-size: contain;
+}
+
+.allowed-ages {
+    font-size: 2.4rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+}
+
+.radio-buttons-gender {
+    display: flex;
+    font-size: 2.4rem;
+    margin-bottom: 8.7rem;
+}
+
+.radio-button {
+    display: flex;
+    gap: 1.2rem;
+}
+
+input[type='radio'] {
+    position: relative;
+    appearance: none;
+    background: url("../img/Vector.svg") center no-repeat;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    transform: translateY(-0.075em);
+    place-content: center;
+    cursor: pointer;
+}
+
+input[type="radio"]::before {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    content: "";
+    background: url("../img/mdi_rhombus.svg") center no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+    transition: .2s transform ease-in-out;
+    border: none;
+}
+
+input[type="radio"]:checked::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.custom-radio::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+.form_radio {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9rem;
+}
+
+.form_radio > label {
+    margin-right: 9rem;
+}
+
+.sex-type {
+    margin-left: 3.6rem;
+}
