@@ -1,0 +1,59 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-text-color: #353535;
+    --current-step-color: #3D46FA;
+    --primary-gradient: linear-gradient(90deg, #4333FF 0%, #07FFD2 100%);
+    --primary-gradient-hover: linear-gradient(90deg, #7E73FF 0%, #07FFD2 100%);
+    --prev-button-gradient: linear-gradient(45deg, #07FFD2, #413BFD);
+    --prev-button-gradient-hover: linear-gradient(45deg, #07FFD2, #7E73FF);
+    --inactive-button-gradient: linear-gradient(90deg, #B2ABFF 0%, #51FFE0 100%);
+    --error-color: #FF6565;
+}
+
+html {
+    height: 100%;
+    font-size: 62.5%;
+}
+
+body {
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+    color: var(--primary-text-color);
+    background: url("../img/image 1.png");
+    background-size: cover;
+}
+
+/*HELPER FUNCTIONS*/
+.margin-sm {
+    margin-bottom: 3rem;
+}
+
+.margin-md {
+    margin-bottom: 4rem;
+}
+
+.margin-lg {
+    margin-bottom: 5rem;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/*//////////*/
+
+.main {
+    height: 100%;
+    padding: 14rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
