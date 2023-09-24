@@ -107,3 +107,9 @@ phoneInput.addEventListener('input', e => {
     if (phone && name && policy && isFinite(phone)) submitButton.classList.remove('btn--inactive')
     if (!name || !phone || !policy || !isFinite(phone)) submitButton.classList.add('btn--inactive')
 })
+
+policyCheck.addEventListener('change', e => {
+    policy = e.target.checked
+    if (phone && name && policy) submitButton.classList.remove('btn--inactive')
+    if (!name || !phone || !policy || !isFinite(phone)) submitButton.classList.add('btn--inactive')
+})
