@@ -93,3 +93,17 @@ nameInput.addEventListener('input', e => {
     if (phone && name && isFinite(phone)) submitButton.classList.remove('btn--inactive')
     if (!phone || !name || !isFinite(phone)) submitButton.classList.add('btn--inactive')
 })
+
+phoneInput.addEventListener('input', e => {
+    phone = e.target.value
+    if (!phone || !isFinite(phone)) {
+        phoneInput.classList.add('invalid')
+        errorLabels[1].classList.remove('hidden')
+    }
+    if (phone && isFinite(phone)) {
+        phoneInput.classList.remove('invalid')
+        errorLabels[1].classList.add('hidden')
+    }
+    if (phone && name && policy && isFinite(phone)) submitButton.classList.remove('btn--inactive')
+    if (!name || !phone || !policy || !isFinite(phone)) submitButton.classList.add('btn--inactive')
+})
