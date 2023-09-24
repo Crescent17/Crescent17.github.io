@@ -55,3 +55,6 @@ nextButtons.forEach((nextButton, index) => {
 backButtons.forEach(backButton => backButton.addEventListener('click', () => {
     handleBack()
 }))
+slider.addEventListener('input', e => {
+    ageNumber.innerText = e.target.value
+})
