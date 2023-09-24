@@ -423,3 +423,18 @@ input[type="checkbox"]:checked::before {
 .input-parent {
     position: relative;
 }
+
+.success-popup {
+    min-width: 116rem;
+    text-align: center;
+    padding: 14rem 16rem;
+    border-radius: 6rem;
+    background-color: #fff;
+    backdrop-filter: brightness(100%);
+}
+
+.success__message {
+    color: var(--primary-text-color);
+    font-size: 3.2rem;
+    font-weight: 500;
+}
