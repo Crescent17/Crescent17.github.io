@@ -79,3 +79,4 @@ citySelect.addEventListener('keyup', e => {
         }
     }
 })
+messageArea.addEventListener('input', e => message = e.target.value)
